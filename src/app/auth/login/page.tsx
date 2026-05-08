@@ -8,7 +8,7 @@ export default function LoginPage() {
         <p className="text-sm font-bold uppercase tracking-normal text-emerald-700">Welcome back</p>
         <h1 className="mt-2 text-3xl font-bold text-ink">Log in to Skilli</h1>
         <p className="mt-2 text-sm leading-6 text-slate-600">
-          Continue to your sessions, matches, and messages.
+          Enter your Gmail address and use the code we send to continue to your sessions.
         </p>
         <div className="mt-6">
           <AuthForm mode="login" />

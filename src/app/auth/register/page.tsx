@@ -10,7 +10,8 @@ export default function RegisterPage() {
         </p>
         <h1 className="mt-2 text-3xl font-bold text-ink">Create your account</h1>
         <p className="mt-2 text-sm leading-6 text-slate-600">
-          Start with 20 points, then earn more by teaching.
+          Use your Gmail address and activate it with a Skilli code. Start with 20 points,
+          then earn more by teaching.
         </p>
         <div className="mt-6">
           <AuthForm mode="register" />
