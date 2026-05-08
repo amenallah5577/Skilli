@@ -4,14 +4,9 @@ import { CalendarPlus, Coins, MapPin, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Rating } from "@/components/ui/Rating";
 import { SkillBadge } from "@/components/ui/SkillBadge";
-import { getProfiles, getPublicProfile, getReviewsForUser } from "@/lib/repository";
+import { getPublicProfile, getReviewsForUser } from "@/lib/repository";
 
-export async function generateStaticParams() {
-  const profiles = await getProfiles();
-  return profiles.map((profile) => ({
-    username: profile.username
-  }));
-}
+export const dynamic = "force-dynamic";
 
 export default async function PublicProfilePage({
   params

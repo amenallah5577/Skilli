@@ -1,14 +1,9 @@
 import { notFound } from "next/navigation";
 import { EmptyState } from "@/components/ui/EmptyState";
 import { LearningRoom } from "@/components/sessions/LearningRoom";
-import { getChatMessages, getCurrentProfile, getSessionDetails, getSessions } from "@/lib/repository";
+import { getChatMessages, getCurrentProfile, getSessionDetails } from "@/lib/repository";
 
-export async function generateStaticParams() {
-  const sessions = await getSessions();
-  return sessions.map((session) => ({
-    sessionId: String(session.id)
-  }));
-}
+export const dynamic = "force-dynamic";
 
 export default async function LearningRoomPage({
   params
