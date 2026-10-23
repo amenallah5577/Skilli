@@ -62,3 +62,5 @@ Skilli uses Supabase Auth and PostgreSQL row-level security instead of maintaini
 ## Verification boundaries
 
 A clean dependency install, type check, lint, production build, local migrations and transactional access checks passed. The migrated database contained 14 initial skills and nine public tables with RLS enabled. The public homepage responded and unauthenticated session requests were denied. Local checks do not establish hosted email delivery or the deployed database's configuration.
+
+The fonts are packaged with the application. A post-merge CI run failed while Next.js fetched Google font files during its build, even though the pull-request build passed. Packaging the same font families removes that build-time network dependency while retaining the intended serif and sans-serif styling.

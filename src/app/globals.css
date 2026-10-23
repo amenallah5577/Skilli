@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --font-dm-sans: "DM Sans Variable";
+  --font-cormorant: "Cormorant Garamond Variable";
   color-scheme: dark;
   background: #17191d;
   --cream: #17191d;
