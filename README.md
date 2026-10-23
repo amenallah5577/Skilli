@@ -60,6 +60,8 @@ Many students need help with specific skills but do not always have access to pa
 
 ## Installation
 
+For a verified local database, email testing, access checks, and the main design trade-off, follow [the engineering guide](docs/engineering.md).
+
 Clone the repository:
 
 ```bash
@@ -70,7 +72,7 @@ cd Skilli
 Install dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
 Create `.env.local` from `.env.example`:
